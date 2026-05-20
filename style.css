@@ -165,7 +165,7 @@ nav a:hover{
 
 /* ===== GRID ===== */
 
-/* ===== GRID ===== */
+/* ===== GRID BASE ===== */
 .grid{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
@@ -187,34 +187,36 @@ nav a:hover{
         grid-template-columns:1fr;
     }
 
-    /* ===== MENÚ MEJORADO ===== */
+    /* ===== MENÚ HORIZONTAL MÓVIL ===== */
     .topbar{
         flex-direction:column;
         text-align:center;
     }
 
     nav ul{
-        flex-direction:column;
-        align-items:center;
+        display:flex;
+        flex-direction:row;        /* 🔥 horizontal */
+        justify-content:center;
+        flex-wrap:wrap;            /* permite bajar si no cabe */
         gap:8px;
+        padding:10px 0;
     }
 
     nav a{
-        padding:8px 12px;
-        font-size:14px;
-        width:100%;
-        max-width:250px;
-        text-align:center;
-        border-radius:6px;
+        padding:6px 10px;         /* más pequeño */
+        font-size:13px;           /* compacto */
+        border-radius:20px;       /* estilo pill moderno */
+        white-space:nowrap;       /* evita salto de línea */
     }
 }
 
-/* ===== MONITORES GRANDES ===== */
+/* ===== MONITOR GRANDE ===== */
 @media (min-width:1400px){
     .grid{
         grid-template-columns:repeat(4, 1fr);
     }
 }
+/* ===== GRID ===== */
 
 /* ===== CARD ===== */
 
