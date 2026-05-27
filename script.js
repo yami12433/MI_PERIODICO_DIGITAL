@@ -54,14 +54,3 @@ window.onclick = function(event){
     });
 
 }
-
-
-
-
-
-
-
-
-
-
-
