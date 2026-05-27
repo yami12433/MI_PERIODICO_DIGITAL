@@ -14,29 +14,42 @@
 
 <!-- ===== HEADER ===== -->
 <header>
-  <div class="topbar">
-    <div class="logo">
-      <img src="D:\yami tareas\WhatsApp Image 2026-05-19 at 10.04.30 PM.png" alt="Logo Con ChatGPT Y Fe">
-      <span>Con ChatGPT Y Fe</span>
+
+    <div class="topbar">
+
+        <div class="logo">
+            <img src="logo.jpg" alt="">
+            <span>con chatgpt y fe</span>
+        </div>
+
+        <!-- BOTON -->
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
     </div>
 
-    <button class="dark-btn" onclick="toggleDarkMode()">
-      🦂🌙 Modo Oscuro
-    </button>
-  </div>
+    <!-- MENU -->
+    <nav id="nav">
 
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#comida">Comida</a></li>
-      <li><a href="#deportes">Deportes</a></li>
-      <li><a href="#tecnologia">Tecnología</a></li>
-      <li><a href="#moda">Moda</a></li>
-      <li><a href="#musica">Música</a></li>
-    </ul>
-  </nav>
+        <ul>
+            <li><a href="#comida">Comida</a></li>
+            <li><a href="#deportes">Deportes</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#moda">Moda</a></li>
+             <li><a href="#musica">Musica</a></li>
+        </ul>
+
+    </nav>
+
+    <script>const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});</script>
+
 </header>
-
 <!-- ===== HERO ===== -->
 <section class="hero" id="inicio">
   <div class="overlay"></div>
